@@ -1,0 +1,2 @@
+update problem set contest_id=2 where id>=1 AND id<=4000
+insert into problem (_id,context_id) values (?,?)
