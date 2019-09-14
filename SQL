@@ -1,2 +1,7 @@
 update problem set contest_id=2 where id>=1 AND id<=4000
 insert into problem (_id,context_id) values (?,?)
+MySQL 8.0 - Client does not support authentication protocol requested by server; consider upgrading MySQL client
+转自：https://stackoverflow.com/questions/50093144/mysql-8-0-client-does-not-support-authentication-protocol-requested-by-server
+Execute the following query in MYSQL Workbench
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'
+Try connecting using node after you do so
